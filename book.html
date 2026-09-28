@@ -1,0 +1,664 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wordstore</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="book.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+
+    <header class="header">
+      <div class="header-main">
+        <!-- LOGO -->
+
+        <a href="#" class="logo"> word<span>store</span> </a>
+
+        <!-- SEARCH -->
+
+        <label class="search">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="7"></circle>
+
+            <path d="m20 20-4-4"></path>
+          </svg>
+
+          <input type="search" placeholder="Search for your favourate books" />
+        </label>
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+          <!-- ACCOUNT -->
+
+          <button class="action">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <circle cx="12" cy="8" r="3.5"></circle>
+
+              <path d="M5 20c.7-3.4 3.1-5.2 7-5.2s6.3 1.8 7 5.2"></path>
+            </svg>
+
+            Account
+          </button>
+
+          <!-- SHOPPING BAG -->
+
+          <button class="action bag">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <path d="M5 8h14l-1 12H6L5 8Z"></path>
+
+              <path d="M9 9V6a3 3 0 0 1 6 0v3"></path>
+            </svg>
+
+            <span class="bag-count">0</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+
+      <nav class="nav">
+        <div class="nav-inner">
+          <a href="#books">Books</a>
+          <a href="#bestsellers">Top 50</a>
+          <a href="#manga">Manga</a>
+          <a href="#authors">Authors</a>
+          <a href="#reading-desk">The Reading Desk</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO / FRONT PAGE -->
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow">A new chapter begins</div>
+
+          <h1>Find your next favourite story.</h1>
+
+          <p>
+            Discover bestselling books, timeless classics, fresh voices and
+            everything that makes a good reading day better.
+          </p>
+
+          <a class="primary-btn" href="#bestsellers"> Explore Books </a>
+        </div>
+
+        <div class="image-container">
+          <!-- <img class="manga-image" src="img/download (6).jpg" />
+          <img class="manga-image" src="img/monster.jpg" /> -->
+        </div>
+      </section>
+
+      <section class="section" id="bestsellers">
+        <div class="section-head">
+          <div>
+            <h2>Best Sellers</h2>
+          </div>
+          <a class="view-all" href="#">View all →</a>
+        </div>
+
+        <div class="products">
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">15% OFF</span>
+              <img
+                class="bst bst-books"
+                src="img/Book Psycho-Cybernetics PDF Free.jpg"
+                alt="One Piece manga cover"
+              />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Eiichiro Oda</div>
+              <h3>One Piece</h3>
+              <div class="price">
+                <span class="old">₹599</span><span class="new">₹509</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">10% OFF</span>
+              <img
+                class="bst bst-books2"
+                src="img/Atomic Habits.jpg"
+                alt="Naruto manga cover"
+              />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Masashi Kishimoto</div>
+              <h3>Naruto</h3>
+              <div class="price">
+                <span class="old">₹749</span><span class="new">₹674</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">12% OFF</span>
+              <img
+                class="bst bst-books3"
+                src="img/download (7).jpg"
+                alt="Attack on Titan manga cover"
+              />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Hajime Isayama</div>
+              <h3>Attack on Titan</h3>
+              <div class="price">
+                <span class="old">₹599</span><span class="new">₹527</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">20% OFF</span>
+              <img
+                class="bst bst-books4"
+                src="img/_The Alchemist Book Cover Redesign _ Paulo Coelho Fan Art for the Classic Novel.jpg"
+                alt="Death Note manga cover"
+              />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Tsugumi Ohba</div>
+              <h3>Death Note</h3>
+
+              <div class="price">
+                <span class="old">₹349</span><span class="new">₹297</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">10% OFF</span>
+              <img
+                class="bst bst-books2"
+                src="img/The Psychology of Money (1).jpg"
+                alt="Vagabond manga cover"
+              />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Takehiko Inoue</div>
+              <h3>Vagabond</h3>
+              <div class="price">
+                <span class="old">₹699</span><span class="new">₹629</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="products">
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">15% OFF</span>
+              <img class="bst bst-books" src="img/Fullmetal Alchemist.jpg" />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Hiromu Arakawa</div>
+              <h3>Fullmetal Alchemist</h3>
+              <div class="price">
+                <span class="old">₹699</span><span class="new">₹594</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">10% OFF</span>
+              <img
+                class="bst bst-books2"
+                src="img/VINLAND SAGA - Thorfinn.jpg"
+              />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Makoto Yukimura</div>
+              <h3>Vinland Saga</h3>
+              <div class="price">
+                <span class="old">₹899</span><span class="new">₹809</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">12% OFF</span>
+              <img class="bst bst-books3" src="img/monstermanga.jpg" />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Naoki Urasawa</div>
+              <h3>Monster</h3>
+              <div class="price">
+                <span class="old">₹699</span><span class="new">₹615</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">20% OFF</span>
+              <img
+                class="bst bst-books4"
+                src="img/Berserk Deluxe Volume 1_ deluxe edition.jpg"
+              />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Kentaro Miura</div>
+              <h3>Berserk</h3>
+
+              <div class="price">
+                <span class="old">₹599</span><span class="new">₹509</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">10% OFF</span>
+              <img class="bst bst-books2" src="img/20thcenturyboys.jpg" />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Naoki Urasawa</div>
+              <h3>20th Century Boys</h3>
+              <div class="price">
+                <span class="old">₹749</span><span class="new">₹674</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="products">
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">15% OFF</span>
+              <img class="bst bst-books" src="img/goodnightpunpun.jpg" />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Inio Asano</div>
+              <h3>Goodnight Punpun</h3>
+              <div class="price">
+                <span class="old">₹649</span><span class="new">₹552</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">10% OFF</span>
+              <img class="bst bst-books2" src="img/Slam dunk poster.jpg" />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Takehiko Inoue</div>
+              <h3>Slam Dunk</h3>
+              <div class="price">
+                <span class="old">₹599</span><span class="new">₹539</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">12% OFF</span>
+              <img
+                class="bst bst-books3"
+                src="img/haikyuu shoyo hinata poster.jpg"
+              />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Haruichi Furudate</div>
+              <h3>Haikyu!!</h3>
+              <div class="price">
+                <span class="old">₹549</span><span class="new">₹483</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">20% OFF</span>
+              <img class="bst bst-books4" src="img/Demon Slayer poster.jpg" />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Koyoharu Gotouge</div>
+              <h3>Demon Slayer</h3>
+
+              <div class="price">
+                <span class="old">₹799</span><span class="new">₹679</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">10% OFF</span>
+              <img class="bst bst-books2" src="img/my hero academia.jpg" />
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Kohei Horikoshi</div>
+              <h3>My Hero Academia</h3>
+              <div class="price">
+                <span class="old">₹649</span><span class="new">₹584</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="books">
+        <div class="section-head">
+          <div>
+            <h2>Explore by Genre</h2>
+            <p>There is a story for every mood.</p>
+          </div>
+        </div>
+        <div class="category-grid">
+          <a class="category" href="#"
+            ><img
+              class="category-image"
+              src="img/download 8.jpg"
+              alt="Fiction books"
+            />
+            <h3>Fiction</h3>
+            <span>Explore →</span></a
+          >
+          <a class="category" href="#"
+            ><img
+              class="category-image"
+              src="img/Nonsense_ The Power of Not Knowing_ Amazon_co.uk_ Jamie Holmes_ 9780385348393_ Books"
+              alt="Non-fiction book"
+            />
+            <h3>Non-Fiction</h3>
+            <span>Explore →</span></a
+          >
+          <a class="category" href="#"
+            ><img
+              class="category-image"
+              src="img/Vagabond - Musashi Miyamoto wallpaper 1920x1080.jpg"
+              alt="Young adult books"
+            />
+            <h3>Young Adult</h3>
+            <span>Explore →</span></a
+          >
+          <a class="category" href="#"
+            ><img
+              class="category-image"
+              src="img/Your Name Movie Poster.jpg"
+              alt="Children's books"
+            />
+            <h3>Children's Books</h3>
+            <span>Explore →</span></a
+          >
+        </div>
+      </section>
+
+      <section class="section" id="manga">
+        <div class="section-head">
+          <div>
+            <h2>Manga Mania</h2>
+            <p>India's destination for manga lovers.</p>
+          </div>
+          <a class="view-all" href="#">Show all →</a>
+        </div>
+        <div class="products">
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">5% OFF</span>
+              <div class="cover a">
+                <img class="berserk2" src="img/berserk2.0.jpg" />
+              </div>
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Kentaro Miura</div>
+              <h3>Berserk Deluxe Volume 1</h3>
+              <div class="price">
+                <span class="old">₹4,250</span><span class="new">₹4,037</span>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">5% OFF</span>
+              <div class="cover b">
+                <img src="img/bluelock.jpg" />
+              </div>
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Muneyuki Kaneshiro</div>
+              <h3>Blue Lock 1</h3>
+              <div class="price">
+                <span class="old">₹1,225</span><span class="new">₹1,163</span>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">5% OFF</span>
+              <div class="cover c">
+                <img src="img/Madara Uchiha.jpg" />
+              </div>
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Masashi Kishimoto</div>
+              <h3>Naruto 01</h3>
+              <div class="price">
+                <span class="old">₹899</span><span class="new">₹854</span>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">5% OFF</span>
+              <div class="cover d">
+                <img src="img/deathnote.jpg" />
+              </div>
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Tsugumi Ohba</div>
+              <h3>Death Note 01</h3>
+              <div class="price">
+                <span class="old">₹899</span><span class="new">₹854</span>
+              </div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-img">
+              <span class="discount">5% OFF</span>
+              <div class="cover e">
+                <img src="img/ace.jpg" />
+              </div>
+              <button class="add">+</button>
+            </div>
+            <div class="product-info">
+              <div class="author">Eiichiro Oda</div>
+              <h3>One Piece 01</h3>
+              <div class="price">
+                <span class="old">₹899</span><span class="new">₹854</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="authors">
+        <div class="section-head">
+          <div>
+            <h2>Discover Great Authors</h2>
+            <p>From timeless classics to modern favourites.</p>
+          </div>
+        </div>
+        <div class="authors">
+          <div class="author-card">
+            <img
+              class="auth-image"
+              src="img/Sudha Murty.jpg"
+              alt="Sudha Murty"
+            />
+            <span class="author-name">Sudha<br />Murty</span>
+          </div>
+          <div class="author-card">
+            <img
+              class="auth-image"
+              src="img/Chetan Bhagat.jpg"
+              alt="chetan Bhagat"
+            />
+            <span class="author-name">Chetan<br />Bhagat</span>
+          </div>
+          <div class="author-card">
+            <img
+              class="auth-image"
+              src="img/ankur wariko.jpg"
+              alt="ankur wariko"
+            />
+            <span class="author-name">Ankur<br />warikoo</span>
+          </div>
+          <div class="author-card">
+            <img
+              class="auth-image"
+              src="img/Amish Tripathi.jpg"
+              alt="amish Tripathi"
+            />
+            <span class="author-name">Amish<br />Tripathi</span>
+          </div>
+          <div class="author-card">
+            <img class="auth-image" src="img/Ruskin.jpg" alt="Ruskin Bond" />
+            <span class="author-name">Ruskin<br />Bond</span>
+          </div>
+          <div class="author-card">
+            <img class="auth-image" src="img/adi.jpeg" alt="Aditya Sharma" />
+            <span class="author-name">Aditya<br />Sharma</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo" id="gifts">
+        <div>
+          <h2>Turn every occasion<br />into a story.</h2>
+          <p>
+            Books make the best gifts. Send a Wordstore gift card and let
+            someone discover their next favourite read.
+          </p>
+          <button class="primary-btn">Send a Gift Card</button>
+        </div>
+      </section>
+
+      <section class="section" id="reading-desk">
+        <div class="section-head">
+          <div>
+            <h2>From the Reading Desk</h2>
+            <p>Ideas, recommendations and stories for book lovers.</p>
+          </div>
+          <a class="view-all" href="#">Show all →</a>
+        </div>
+        <div class="articles">
+          <article class="article featured">
+            <div class="tag">New Releases</div>
+            <img
+              class="article-image"
+              src="img/history.jpg"
+              alt="Stack of history books"
+            />
+            <h3>Stop Doom scrolling learn something new from past</h3>
+            <p>
+              Discover fascinating stories from the past and the books bringing
+              them to life.
+            </p>
+          </article>
+          <article class="article">
+            <div class="tag">New Releases</div>
+            <img
+              class="article-image"
+              src="img/The Psychology of Money (1).jpg"
+              alt="The Psychology of Money book cover"
+            />
+            <h3>Psychology of money explains how cashflow is maintained</h3>
+          </article>
+          <article class="article">
+            <div class="tag">Guide</div>
+            <img
+              class="article-image"
+              src="img/Vagabond - Musashi Miyamoto wallpaper 1920x1080.jpg"
+              alt="Vagabond manga artwork"
+            />
+            <h3>Vaga bond: The Life changer manga.</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">wordstore</div>
+          <p>
+            A bookstore for curious minds, passionate readers and anyone looking
+            for their next great story.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="#">Books</a><a href="#">Stationery</a
+          ><a href="#">Toys & Games</a><a href="#">Gifts</a>
+        </div>
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <a href="#">Secure Shopping</a><a href="#">Shipping Policy</a
+          ><a href="#">Returns</a><a href="#">Gift Cards</a>
+        </div>
+        <div class="footer-col">
+          <h4>Wordstore</h4>
+          <a href="#">About Us</a><a href="#">Store Locator</a
+          ><a href="#">Blogs</a><a href="#">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Wordstore. All Rights Reserved.</div>
+    </footer>
+  </body>
+</html>
