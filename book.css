@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rubik:wght@400;500;600;700;800;900&display=swap");
 
 :root {
-  --purple: #5b2b82;
+  --purple: #350e55;
   --purple-dark: #3f185e;
   --cream: #f7f3ed;
   --line: #e7e2dc;
@@ -214,10 +214,6 @@ button {
 .hero {
   background: url("img/thisisfinal.jpg") center / cover no-repeat;
   min-height: 60vh;
-
-  display: grid;
-  grid-template-columns: 52.5% 47.5%;
-  overflow: hidden;
   position: relative;
 }
 
