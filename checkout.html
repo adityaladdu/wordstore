@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordstore Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+      defer
+    ></script>
+    <script src="checkout.js" defer></script>
+  </head>
+  <body>
+    <div class="checkout-shell">
+      <header class="checkout-header">
+        <a class="mini-logo" href="book.html">word<span>store</span></a>
+        <div class="secure-badge">Secure checkout</div>
+      </header>
+
+      <main class="checkout-grid">
+        <section class="checkout-panel">
+          <div class="panel-head">
+            <p class="eyebrow">Payment</p>
+            <h1>Checkout</h1>
+          </div>
+
+          <div class="invoice-meta">
+            <span id="receiptNumber">Receipt #WS-0001</span>
+            <span id="receiptDate">Date</span>
+          </div>
+
+          <div id="cartItems" class="cart-items" aria-live="polite"></div>
+        </section>
+
+        <aside class="summary-panel">
+          <h2>Bill Summary</h2>
+
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <strong id="subtotalValue">₹0</strong>
+          </div>
+          <div class="summary-row">
+            <span>Discount</span>
+            <strong id="discountValue">-₹0</strong>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <strong id="shippingValue">₹0</strong>
+          </div>
+          <div class="summary-row total-row">
+            <span>Total</span>
+            <strong id="totalValue">₹0</strong>
+          </div>
+
+          <div class="coupon-box" id="couponBox">
+            <span>Next visit coupon</span>
+            <strong id="couponCode">WELCOME10</strong>
+          </div>
+
+          <label class="phone-field" for="whatsappNumber">
+            <span>WhatsApp number</span>
+            <input
+              id="whatsappNumber"
+              type="tel"
+              inputmode="numeric"
+              placeholder="91XXXXXXXXXX"
+              value="919999999999"
+            />
+          </label>
+
+          <button id="payButton" class="primary-btn" type="button">
+            Pay &amp; Download Receipt
+          </button>
+          <button id="whatsappButton" class="secondary-btn" type="button">
+            Share via WhatsApp
+          </button>
+
+          <a href="book.html" class="back-link">Continue shopping</a>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
